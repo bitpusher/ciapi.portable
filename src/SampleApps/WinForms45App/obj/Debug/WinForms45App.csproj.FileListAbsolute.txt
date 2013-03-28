@@ -1,8 +1,0 @@
-C:\dev\ciapi.portable-repotest2\src\SampleApps\WinForms45App\bin\Debug\WinForms45App.exe.config
-C:\dev\ciapi.portable-repotest2\src\SampleApps\WinForms45App\bin\Debug\WinForms45App.exe
-C:\dev\ciapi.portable-repotest2\src\SampleApps\WinForms45App\bin\Debug\WinForms45App.pdb
-C:\dev\ciapi.portable-repotest2\src\SampleApps\WinForms45App\obj\Debug\WinForms45App.Properties.Resources.resources
-C:\dev\ciapi.portable-repotest2\src\SampleApps\WinForms45App\obj\Debug\WinForms45App.csproj.GenerateResource.Cache
-C:\dev\ciapi.portable-repotest2\src\SampleApps\WinForms45App\obj\Debug\WinForms45App.exe
-C:\dev\ciapi.portable-repotest2\src\SampleApps\WinForms45App\obj\Debug\WinForms45App.pdb
-C:\dev\ciapi.portable-repotest2\src\SampleApps\WinForms45App\obj\Debug\WinForms45App.csprojResolveAssemblyReference.cache
