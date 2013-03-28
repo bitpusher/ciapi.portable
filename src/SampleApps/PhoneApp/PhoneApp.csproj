@@ -152,9 +152,13 @@
       <Project>{70926E6B-72BD-4ADE-A26B-514B834D8185}</Project>
       <Name>CIAPI.Portable</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Salient.HttpArchiveFormat.Portable\Salient.HttpArchiveFormat.Portable.csproj">
+    <ProjectReference Include="..\..\Salient.HttpArchiveFormat.Portable\Salient.Portable.HttpArchiveFormat.csproj">
       <Project>{C0E7414E-1C6F-4F25-8C1C-DFDA0FC07ED4}</Project>
       <Name>Salient.HttpArchiveFormat.Portable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Salient.ReliableHttpClient.Portable\Salient.Portable.ReliableHttpClient.csproj">
+      <Project>{E90E0325-6672-4D5F-A996-159A1312E60A}</Project>
+      <Name>Salient.Portable.ReliableHttpClient</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />

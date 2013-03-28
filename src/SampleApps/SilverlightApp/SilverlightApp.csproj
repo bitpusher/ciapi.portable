@@ -97,9 +97,13 @@
       <Project>{70926e6b-72bd-4ade-a26b-514b834d8185}</Project>
       <Name>CIAPI.Portable</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Salient.HttpArchiveFormat.Portable\Salient.HttpArchiveFormat.Portable.csproj">
+    <ProjectReference Include="..\..\Salient.HttpArchiveFormat.Portable\Salient.Portable.HttpArchiveFormat.csproj">
       <Project>{c0e7414e-1c6f-4f25-8c1c-dfda0fc07ed4}</Project>
       <Name>Salient.HttpArchiveFormat.Portable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Salient.ReliableHttpClient.Portable\Salient.Portable.ReliableHttpClient.csproj">
+      <Project>{E90E0325-6672-4D5F-A996-159A1312E60A}</Project>
+      <Name>Salient.Portable.ReliableHttpClient</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />

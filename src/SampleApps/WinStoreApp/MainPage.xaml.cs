@@ -18,10 +18,7 @@ namespace WinStoreApp
         public MainPage()
         {
             InitializeComponent();
-            Client = new Client
-            {
-                ApiBaseUrl = "https://ciapi.cityindex.com/tradingapi"
-            };
+            Client = new Client("http://ciapi.cityindex.com/tradingapi", "portable app");
         }
 
         private Client Client { get; set; }
@@ -57,7 +54,7 @@ namespace WinStoreApp
             {
                 LoginButton.IsEnabled = false;
                 Task<ApiLogOnResponseDTO> t =
-                    Client.LoginAsync(new ApiLogOnRequestDTO {UserName = "xx663766", Password = "password1"});
+                    Client.LoginAsync("xx663766", "password1");
                 t.ContinueWith(tt =>
                     {
                         Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>

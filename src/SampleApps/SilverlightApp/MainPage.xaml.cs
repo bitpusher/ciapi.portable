@@ -20,11 +20,8 @@ namespace SilverlightApp
         public MainPage()
         {
             InitializeComponent();
-            Client = new Client
-            {
-                // silverlight does not allow cross scheme calls (http->https)
-                ApiBaseUrl = "http://ciapi.cityindex.com/tradingapi"
-            };
+            Client = new Client("http://ciapi.cityindex.com/tradingapi", "portable app");
+
         }
         private Client Client { get; set; }
         private void LoginButton_Click(object sender, RoutedEventArgs e)
@@ -47,7 +44,7 @@ namespace SilverlightApp
             {
                 LoginButton.IsEnabled = false;
                 Task<ApiLogOnResponseDTO> t =
-                    Client.LoginAsync(new ApiLogOnRequestDTO { UserName = "xx663766", Password = "password1" });
+                    Client.LoginAsync("xx663766", "password1");
                 t.ContinueWith(tt =>
                 {
                     Dispatcher.BeginInvoke(() =>
