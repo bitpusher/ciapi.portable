@@ -1,1 +1,0 @@
-C:\dev\ciapi.portable-repotest2\src\SampleApps\WinStoreApp\WinStoreApp.csproj;neutral
