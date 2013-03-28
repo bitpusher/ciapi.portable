@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
-    <version>0.0.0-bleeding-0</version>
+    <version>0.0.1-bleeding-1</version>
     <authors>CityIndex Ltd, Sky Sanders</authors>
     
     <licenseUrl>https://github.com/cityindex/CIAPI.CS/raw/master/LICENSE.txt</licenseUrl>
@@ -12,12 +12,15 @@
     <language>en-GB</language>
   </metadata>
   <files>
-    <file src="..\dist\lib\ciapi\bin\**\CIAPI.Portable.dll" target="lib\portable-sl5+wp8+windows8+net45" />
-    <file src="..\dist\lib\ciapi\bin\**\CIAPI.Portable.pdb" target="lib\portable-sl5+wp8+windows8+net45" />
-    <file src="..\dist\lib\ciapi\bin\**\CIAPI.Portable.xml" target="lib\portable-sl5+wp8+windows8+net45" />
-    <file src="..\dist\lib\ciapi\bin\**\Salient.Portable.HttpArchiveFormat.dll" target="lib\portable-sl5+wp8+windows8+net45" />
-    <file src="..\dist\lib\ciapi\bin\**\Salient.Portable.HttpArchiveFormat.pdb" target="lib\portable-sl5+wp8+windows8+net45" />
-    <file src="..\dist\lib\ciapi\bin\**\Salient.Portable.HttpArchiveFormat.xml" target="lib\portable-sl5+wp8+windows8+net45" />
-    <file src="..\dist\lib\ciapi\bin\**\Newtonsoft.Json.dll" target="lib\portable-sl5+wp8+windows8+net45" />
+    <file src="CIAPI.Portable\bin\debug\CIAPI.Portable.dll" target="lib\portable-sl5+wp8+windows8+net4" />
+    <file src="CIAPI.Portable\bin\debug\CIAPI.Portable.pdb" target="lib\portable-sl5+wp8+windows8+net4" />
+    <file src="CIAPI.Portable\bin\debug\CIAPI.Portable.xml" target="lib\portable-sl5+wp8+windows8+net4" />
+    <file src="CIAPI.Portable\bin\debug\Salient.Portable.HttpArchiveFormat.dll" target="lib\portable-sl5+wp8+windows8+net4" />
+    <file src="CIAPI.Portable\bin\debug\Salient.Portable.HttpArchiveFormat.pdb" target="lib\portable-sl5+wp8+windows8+net4" />
+    <file src="CIAPI.Portable\bin\debug\Salient.Portable.HttpArchiveFormat.xml" target="lib\portable-sl5+wp8+windows8+net4" />
+    <file src="CIAPI.Portable\bin\debug\Salient.Portable.ReliableHttpClient.dll" target="lib\portable-sl5+wp8+windows8+net4" />
+    <file src="CIAPI.Portable\bin\debug\Salient.Portable.ReliableHttpClient.pdb" target="lib\portable-sl5+wp8+windows8+net4" />
+    <file src="CIAPI.Portable\bin\debug\Salient.Portable.ReliableHttpClient.xml" target="lib\portable-sl5+wp8+windows8+net4" />
+    <file src="CIAPI.Portable\bin\debug\Newtonsoft.Json.dll" target="lib\portable-sl5+wp8+windows8+net4" />
   </files>
 </package>

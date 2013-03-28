@@ -3,6 +3,9 @@ using System.Runtime.Serialization;
 
 namespace Salient.Portable.HttpArchiveFormat
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [DataContract]
     public partial class CacheItem
     {
