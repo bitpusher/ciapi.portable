@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 namespace CIAPI.Portable.Rpc
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public partial class Client
     {
 

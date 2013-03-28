@@ -1,0 +1,6 @@
+C:\dev\ciapi.portable-repotest2\src\Salient.HttpArchiveFormat.Portable\bin\Debug\Salient.Portable.HttpArchiveFormat.xml
+C:\dev\ciapi.portable-repotest2\src\Salient.HttpArchiveFormat.Portable\bin\Debug\Salient.Portable.HttpArchiveFormat.dll
+C:\dev\ciapi.portable-repotest2\src\Salient.HttpArchiveFormat.Portable\bin\Debug\Salient.Portable.HttpArchiveFormat.pdb
+C:\dev\ciapi.portable-repotest2\src\Salient.HttpArchiveFormat.Portable\obj\Debug\Salient.Portable.HttpArchiveFormat.dll
+C:\dev\ciapi.portable-repotest2\src\Salient.HttpArchiveFormat.Portable\obj\Debug\Salient.Portable.HttpArchiveFormat.pdb
+C:\dev\ciapi.portable-repotest2\src\Salient.HttpArchiveFormat.Portable\obj\Debug\Salient.Portable.HttpArchiveFormat.csprojResolveAssemblyReference.cache

@@ -6,8 +6,17 @@ using Salient.Portable.HttpArchiveFormat;
 
 namespace Salient.Portable.ReliableHttpClient
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class Helper
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="entry"></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
         public static T CloneObject<T>(Entry entry) where T : class, new()
         {
             // the simplest way i can see to get a true deep copy in this framework profile is to
@@ -19,6 +28,10 @@ namespace Salient.Portable.ReliableHttpClient
         }
 
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="entry"></param>
         public static void PrepareEntryRequest(Entry entry)
         {
             // url is modified using the {xx} matching strategy
@@ -74,6 +87,11 @@ namespace Salient.Portable.ReliableHttpClient
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="stream"></param>
+        /// <returns></returns>
         public static byte[] ReadStreamFully(Stream stream)
         {
             var buffer = new byte[32768];

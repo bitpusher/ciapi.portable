@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SKYW701W8</Machine>
+    <WindowsUser>skysa_000</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>7A0BEF5C9ABBFAAA1864F434F07929602FAB474C20BCB06C78D573F68631C8CD</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>e9df0dcd-b52b-4f84-8a77-66e95b3f1cbe_1.0.0.0_neutral__cgzt0w63hq42a</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>e9df0dcd-b52b-4f84-8a77-66e95b3f1cbe_cgzt0w63hq42a!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>e9df0dcd-b52b-4f84-8a77-66e95b3f1cbe</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=skysa_000</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\dev\ciapi.portable-repotest2\src\SampleApps\WinStoreApp\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-03-28T00:31:28.552</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\SampleApps\WinStoreApp\bin\Debug\WinStoreApp.exe">
+      <PackagePath>WinStoreApp.exe</PackagePath>
+      <Modified>2013-03-28T00:31:28.329</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\SampleApps\WinStoreApp\bin\Debug\WinStoreApp.pdb">
+      <PackagePath>WinStoreApp.pdb</PackagePath>
+      <Modified>2013-03-28T00:31:28.319</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\CIAPI.Portable.dll">
+      <PackagePath>CIAPI.Portable.dll</PackagePath>
+      <Modified>2013-03-28T00:31:26.916</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\Salient.HttpArchiveFormat.Portable\bin\Debug\Salient.Portable.HttpArchiveFormat.dll">
+      <PackagePath>Salient.Portable.HttpArchiveFormat.dll</PackagePath>
+      <Modified>2013-03-28T00:31:26.218</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\Salient.ReliableHttpClient.Portable\bin\Debug\Salient.Portable.ReliableHttpClient.dll">
+      <PackagePath>Salient.Portable.ReliableHttpClient.dll</PackagePath>
+      <Modified>2013-03-28T00:31:26.488</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2013-03-28T00:18:04.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\CIAPI.Portable.pdb">
+      <PackagePath>CIAPI.Portable.pdb</PackagePath>
+      <Modified>2013-03-28T00:31:26.894</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\Salient.HttpArchiveFormat.Portable\bin\Debug\Salient.Portable.HttpArchiveFormat.pdb">
+      <PackagePath>Salient.Portable.HttpArchiveFormat.pdb</PackagePath>
+      <Modified>2013-03-28T00:31:26.192</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\Salient.ReliableHttpClient.Portable\bin\Debug\Salient.Portable.ReliableHttpClient.pdb">
+      <PackagePath>Salient.Portable.ReliableHttpClient.pdb</PackagePath>
+      <Modified>2013-03-28T00:31:26.478</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\CIAPI.Portable.xml">
+      <PackagePath>CIAPI.Portable.xml</PackagePath>
+      <Modified>2013-03-28T00:31:26.885</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\Salient.HttpArchiveFormat.Portable\bin\Debug\Salient.Portable.HttpArchiveFormat.xml">
+      <PackagePath>Salient.Portable.HttpArchiveFormat.xml</PackagePath>
+      <Modified>2013-03-28T00:31:26.186</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\Salient.ReliableHttpClient.Portable\bin\Debug\Salient.Portable.ReliableHttpClient.xml">
+      <PackagePath>Salient.Portable.ReliableHttpClient.xml</PackagePath>
+      <Modified>2013-03-28T00:31:26.475</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\Newtonsoft.Json.xml">
+      <PackagePath>Newtonsoft.Json.xml</PackagePath>
+      <Modified>2013-03-28T00:18:04.409</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\SampleApps\WinStoreApp\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-03-28T00:18:04.063</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\SampleApps\WinStoreApp\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-03-28T00:18:04.064</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\SampleApps\WinStoreApp\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-03-28T00:18:04.065</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\SampleApps\WinStoreApp\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-03-28T00:18:04.066</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\SampleApps\WinStoreApp\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2013-03-28T00:18:04.062</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\SampleApps\WinStoreApp\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2013-03-28T00:18:04.072</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\SampleApps\WinStoreApp\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2013-03-28T00:18:04.073</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\ciapi.portable-repotest2\src\SampleApps\WinStoreApp\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-03-28T00:31:28.476</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

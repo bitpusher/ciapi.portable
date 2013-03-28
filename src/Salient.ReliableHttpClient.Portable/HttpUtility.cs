@@ -35,13 +35,27 @@ using System.Text;
 
 namespace Salient.Portable.ReliableHttpClient
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public sealed class HttpUtility
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
         public static string UrlEncode(string str)
         {
             return UrlEncode(str, Encoding.UTF8);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="Enc"></param>
+        /// <returns></returns>
         public static string UrlEncode(string s, Encoding Enc)
         {
             if (s == null)
@@ -75,6 +89,13 @@ namespace Salient.Portable.ReliableHttpClient
             return Encoding.UTF8.GetString(t2, 0, t2.Length);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="bytes"></param>
+        /// <param name="offset"></param>
+        /// <param name="count"></param>
+        /// <returns></returns>
         public static byte[] UrlEncodeToBytes(byte[] bytes, int offset, int count)
         {
             if (bytes == null)

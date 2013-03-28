@@ -1,0 +1,8 @@
+﻿<xapCache source="C:\dev\ciapi.portable-repotest2\src\SampleApps\SilverlightApp\Bin\Debug\SilverlightApp.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="3/27/2013 5:44:02 PM">
+  <file source="C:\dev\ciapi.portable-repotest2\src\SampleApps\SilverlightApp\obj\Debug\SilverlightApp.dll" archivePath="SilverlightApp.dll" lastWriteTime="3/27/2013 5:44:02 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\CIAPI.Portable.dll" archivePath="CIAPI.Portable.dll" lastWriteTime="3/27/2013 5:44:01 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\Salient.HttpArchiveFormat.Portable\bin\Debug\Salient.Portable.HttpArchiveFormat.dll" archivePath="Salient.Portable.HttpArchiveFormat.dll" lastWriteTime="3/27/2013 5:42:39 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\Salient.ReliableHttpClient.Portable\bin\Debug\Salient.Portable.ReliableHttpClient.dll" archivePath="Salient.Portable.ReliableHttpClient.dll" lastWriteTime="3/27/2013 5:44:00 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\Newtonsoft.Json.dll" archivePath="Newtonsoft.Json.dll" lastWriteTime="3/27/2013 5:18:04 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\SampleApps\SilverlightApp\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="3/27/2013 5:42:42 PM" />
+</xapCache>

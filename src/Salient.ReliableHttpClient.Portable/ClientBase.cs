@@ -3,14 +3,21 @@ using System.IO;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using Salient.Portable.HttpArchiveFormat;
 
 
 namespace Salient.Portable.ReliableHttpClient
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class ClientBase
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="e"></param>
+        /// <returns></returns>
         public virtual Task<Entry> EnqueueRequestAsync(Entry e)
         {
             // TODO: implement throttled queue using Task/Parallel classes

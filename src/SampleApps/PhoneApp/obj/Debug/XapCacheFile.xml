@@ -1,0 +1,20 @@
+﻿<xapCache source="C:\dev\ciapi.portable-repotest2\src\SampleApps\PhoneApp\Bin\Debug\PhoneApp_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="3/27/2013 5:44:03 PM">
+  <file source="C:\dev\ciapi.portable-repotest2\src\SampleApps\PhoneApp\obj\Debug\PhoneApp.dll" archivePath="PhoneApp.dll" lastWriteTime="3/27/2013 5:44:02 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\SampleApps\PhoneApp\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="3/27/2013 5:18:04 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\SampleApps\PhoneApp\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="3/27/2013 5:18:04 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\SampleApps\PhoneApp\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="3/27/2013 5:18:04 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\SampleApps\PhoneApp\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="3/27/2013 5:18:04 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\SampleApps\PhoneApp\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="3/27/2013 5:18:04 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\SampleApps\PhoneApp\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="3/27/2013 5:42:42 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\SampleApps\PhoneApp\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="3/27/2013 5:18:04 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\SampleApps\PhoneApp\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="3/27/2013 5:18:04 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\CIAPI.Portable.dll" archivePath="CIAPI.Portable.dll" lastWriteTime="3/27/2013 5:44:01 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\Salient.HttpArchiveFormat.Portable\bin\Debug\Salient.Portable.HttpArchiveFormat.dll" archivePath="Salient.Portable.HttpArchiveFormat.dll" lastWriteTime="3/27/2013 5:42:39 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\Salient.ReliableHttpClient.Portable\bin\Debug\Salient.Portable.ReliableHttpClient.dll" archivePath="Salient.Portable.ReliableHttpClient.dll" lastWriteTime="3/27/2013 5:44:00 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\Newtonsoft.Json.dll" archivePath="Newtonsoft.Json.dll" lastWriteTime="3/27/2013 5:18:04 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\CIAPI.Portable.xml" archivePath="CIAPI.Portable.xml" lastWriteTime="3/27/2013 5:44:01 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\Salient.HttpArchiveFormat.Portable\bin\Debug\Salient.Portable.HttpArchiveFormat.xml" archivePath="Salient.Portable.HttpArchiveFormat.xml" lastWriteTime="3/27/2013 5:42:39 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\Salient.ReliableHttpClient.Portable\bin\Debug\Salient.Portable.ReliableHttpClient.xml" archivePath="Salient.Portable.ReliableHttpClient.xml" lastWriteTime="3/27/2013 5:44:00 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\Newtonsoft.Json.xml" archivePath="Newtonsoft.Json.xml" lastWriteTime="3/27/2013 5:18:04 PM" />
+  <file source="C:\dev\ciapi.portable-repotest2\src\SampleApps\PhoneApp\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="3/27/2013 5:42:42 PM" />
+</xapCache>

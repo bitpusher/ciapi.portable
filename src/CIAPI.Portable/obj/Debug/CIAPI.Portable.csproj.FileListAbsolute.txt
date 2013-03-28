@@ -1,0 +1,14 @@
+C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\CIAPI.Portable.XML
+C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\CIAPI.Portable.dll
+C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\CIAPI.Portable.pdb
+C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\Newtonsoft.Json.dll
+C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\Salient.Portable.HttpArchiveFormat.dll
+C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\Salient.Portable.ReliableHttpClient.dll
+C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\Salient.Portable.HttpArchiveFormat.pdb
+C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\Salient.Portable.HttpArchiveFormat.xml
+C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\Salient.Portable.ReliableHttpClient.pdb
+C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\Salient.Portable.ReliableHttpClient.xml
+C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\bin\Debug\Newtonsoft.Json.xml
+C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\obj\Debug\CIAPI.Portable.csprojResolveAssemblyReference.cache
+C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\obj\Debug\CIAPI.Portable.dll
+C:\dev\ciapi.portable-repotest2\src\CIAPI.Portable\obj\Debug\CIAPI.Portable.pdb
