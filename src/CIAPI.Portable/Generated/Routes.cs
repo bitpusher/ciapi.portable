@@ -74,7 +74,15 @@ namespace CIAPI.Portable.Rpc
         /// </summary>
       public _ClientApplication ClientApplication{get; private set;}
         private Client _client;
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
         public string AppKey { get; set; }
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
         public Client(string rpcUri, string appKey)
         {
         AppKey=appKey;
@@ -134,9 +142,17 @@ namespace CIAPI.Portable.Rpc
         }
 
 
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
         public class _Authentication
         {
             private Client _client;
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
             public _Authentication(Client client){ this._client = client;}
 
         // ***********************************
@@ -259,9 +275,17 @@ namespace CIAPI.Portable.Rpc
 
 
         }            
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
         public class _PriceHistory
         {
             private Client _client;
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
             public _PriceHistory(Client client){ this._client = client;}
 
         // ***********************************
@@ -270,7 +294,7 @@ namespace CIAPI.Portable.Rpc
 
 
         /// <summary>
-        /// Get historic price bars for the specified market in OHLC *(open, high, low, close)* format, suitable for plotting in candlestick charts. Returns price bars in ascending order up to the current time. When there are no prices for a particular time period, no price bar is returned. Thus, it can appear that the array of price bars has "gaps", i.e. the gap between the date & time of each price bar might not be equal to interval x span.  Sample Urls: * /market/1234/history?interval=MINUTE&span=15&PriceBars=180 * /market/735/history?interval=HOUR&span=1&PriceBars=240 * /market/1577/history?interval=DAY&span=1&PriceBars=10
+        /// Get historic price bars for the specified market in OHLC *(open, high, low, close)* format, suitable for plotting in candlestick charts. Returns price bars in ascending order up to the current time. When there are no prices for a particular time period, no price bar is returned. Thus, it can appear that the array of price bars has "gaps", i.e. the gap between the date &amp;amp; time of each price bar might not be equal to interval x span.  Sample Urls: * /market/1234/history?interval=MINUTE&amp;amp;span=15&amp;amp;PriceBars=180 * /market/735/history?interval=HOUR&amp;amp;span=1&amp;amp;PriceBars=240 * /market/1577/history?interval=DAY&amp;amp;span=1&amp;amp;PriceBars=10
         /// </summary>
         /// <param name="MarketId">The ID of the market.</param>
         /// <param name="interval">The pricebar interval.</param>
@@ -341,9 +365,17 @@ namespace CIAPI.Portable.Rpc
 
 
         }            
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
         public class _News
         {
             private Client _client;
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
             public _News(Client client){ this._client = client;}
 
         // ***********************************
@@ -461,9 +493,17 @@ namespace CIAPI.Portable.Rpc
 
 
         }            
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
         public class _CFDMarkets
         {
             private Client _client;
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
             public _CFDMarkets(Client client){ this._client = client;}
 
         // ***********************************
@@ -507,9 +547,17 @@ namespace CIAPI.Portable.Rpc
 
 
         }            
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
         public class _SpreadMarkets
         {
             private Client _client;
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
             public _SpreadMarkets(Client client){ this._client = client;}
 
         // ***********************************
@@ -553,9 +601,17 @@ namespace CIAPI.Portable.Rpc
 
 
         }            
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
         public class _Market
         {
             private Client _client;
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
             public _Market(Client client){ this._client = client;}
 
         // ***********************************
@@ -840,9 +896,17 @@ namespace CIAPI.Portable.Rpc
 
 
         }            
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
         public class _Preference
         {
             private Client _client;
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
             public _Preference(Client client){ this._client = client;}
 
         // ***********************************
@@ -997,9 +1061,17 @@ namespace CIAPI.Portable.Rpc
 
 
         }            
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
         public class _TradesAndOrders
         {
             private Client _client;
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
             public _TradesAndOrders(Client client){ this._client = client;}
 
         // ***********************************
@@ -1491,9 +1563,17 @@ namespace CIAPI.Portable.Rpc
 
 
         }            
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
         public class _AccountInformation
         {
             private Client _client;
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
             public _AccountInformation(Client client){ this._client = client;}
 
         // ***********************************
@@ -1570,9 +1650,17 @@ namespace CIAPI.Portable.Rpc
 
 
         }            
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
         public class _Messaging
         {
             private Client _client;
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
             public _Messaging(Client client){ this._client = client;}
 
         // ***********************************
@@ -1581,7 +1669,7 @@ namespace CIAPI.Portable.Rpc
 
 
         /// <summary>
-        /// Use the message lookup service to get localised text names for the various status codes & IDs returned by the API. For example, a query for **OrderStatusReason** will contain text names for all the possible values of **OrderStatusReason** in the [ApiOrderResponseDTO](http://labs.cityindex.com/docs/Content/Data%20Types/ApiOrderResponseDTO.htm). You should only request the list once per session *(for each entity you're interested in)*.
+        /// Use the message lookup service to get localised text names for the various status codes &amp;amp; IDs returned by the API. For example, a query for **OrderStatusReason** will contain text names for all the possible values of **OrderStatusReason** in the [ApiOrderResponseDTO](http://labs.cityindex.com/docs/Content/Data%20Types/ApiOrderResponseDTO.htm). You should only request the list once per session *(for each entity you're interested in)*.
         /// </summary>
         /// <param name="LookupEntityName">The entity to lookup. For example: **OrderStatusReason**, **InstructionStatusReason**, **OrderApplicability**, **Currency**, **QuoteStatus**, **QuoteStatusReason** or **Culture**.</param>
         /// <param name="CultureId">The Culture ID used to override the translated text description. *(Optional)*.</param>
@@ -1690,9 +1778,17 @@ namespace CIAPI.Portable.Rpc
 
 
         }            
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
         public class _Watchlist
         {
             private Client _client;
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
             public _Watchlist(Client client){ this._client = client;}
 
         // ***********************************
@@ -1808,9 +1904,17 @@ namespace CIAPI.Portable.Rpc
 
 
         }            
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
         public class _ClientApplication
         {
             private Client _client;
+
+        /// <summary>
+        ///  [DESCRIPTION MISSING]
+        /// </summary>
             public _ClientApplication(Client client){ this._client = client;}
 
         // ***********************************

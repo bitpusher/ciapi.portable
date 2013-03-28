@@ -112,16 +112,8 @@ namespace CIAPI.Portable.Tests
             var loginTask = client.LoginAsync("xx663766", "password1");
 
             // simple block till completion. Async completion can be used by getting the awaiter or setting a .ContinueWith task
-            try
-            {
-                loginTask.Wait();
-            }
-            catch (Exception ex)
-            {
 
-                throw;
-            }
-
+            loginTask.Wait();
 
             // the response dto is available in loginTask.Result if 
             // you want to check passwordchangerequired etc but the client

@@ -10,6 +10,9 @@ namespace Salient.Portable.HttpArchiveFormat
      [DataContract]
     public partial class Timings
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public Timings()
         {
             Blocked = -1;

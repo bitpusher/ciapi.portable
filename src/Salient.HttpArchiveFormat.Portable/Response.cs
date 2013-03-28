@@ -10,6 +10,9 @@ namespace Salient.Portable.HttpArchiveFormat
     [DataContract]
     public partial class Response
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public Response()
         {
  

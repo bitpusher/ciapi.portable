@@ -2,6 +2,9 @@ using System.Collections.Generic;
 
 namespace Salient.Portable.HttpArchiveFormat
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Cookies : List<Cookie>
     {
         /// <summary>

@@ -11,6 +11,9 @@ namespace Salient.Portable.HttpArchiveFormat
     [DataContract]
     public partial class PageTimings
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public PageTimings()
         {
             OnContentLoad = -1;

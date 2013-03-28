@@ -13,6 +13,9 @@ namespace Salient.Portable.HttpArchiveFormat
     [DataContract]
     public partial class Entry
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public Entry()
         {
             Time = -1;

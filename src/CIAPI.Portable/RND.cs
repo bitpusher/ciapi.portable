@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace CIAPI.Portable
 {
+
     public class RND
     {
         public Task<string> GetA()

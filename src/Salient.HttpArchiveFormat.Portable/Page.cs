@@ -9,6 +9,9 @@ namespace Salient.Portable.HttpArchiveFormat
     [DataContract]
     public partial class Page
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public Page()
         {
        

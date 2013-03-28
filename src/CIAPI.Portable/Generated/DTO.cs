@@ -1642,12 +1642,12 @@ namespace CIAPI.Portable.Model
         [DataMember]
         public string Currency { get; set; }
         /// <summary>
-        /// The realised profit and loss (P&L).
+        /// The realised profit and loss (P&amp;L).
         /// </summary>
         [DataMember]
         public decimal? RealisedPnl { get; set; }
         /// <summary>
-        /// The realised P&L currency.
+        /// The realised P&amp;L currency.
         /// </summary>
         [DataMember]
         public string RealisedPnlCurrency { get; set; }

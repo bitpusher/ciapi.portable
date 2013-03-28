@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using CIAPI.Portable.Model;
 using CIAPI.Portable.Rpc;
 using Windows.UI.Core;
@@ -40,30 +41,24 @@ namespace WinStoreApp
             {
                 LoginButton.IsEnabled = false;
                 Task<ApiLogOffResponseDTO> t = Client.LogOutAsync();
-                t.ContinueWith(tt =>
+                t.ContinueWith(tt => Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
                     {
-                        Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
-                            {
-                                OutputTextBox.Text = "Logged out: " + tt.Result.LoggedOut;
-                                LoginButton.Content = "LogIn";
-                                LoginButton.IsEnabled = true;
-                            });
-                    });
+                        OutputTextBox.Text = "Logged out: " + tt.Result.LoggedOut;
+                        LoginButton.Content = "LogIn";
+                        LoginButton.IsEnabled = true;
+                    }).AsTask().Wait());
             }
             else
             {
                 LoginButton.IsEnabled = false;
                 Task<ApiLogOnResponseDTO> t =
                     Client.LoginAsync("xx663766", "password1");
-                t.ContinueWith(tt =>
+                t.ContinueWith(tt => Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
                     {
-                        Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
-                            {
-                                OutputTextBox.Text = "Logged in: " + Client.SessionId;
-                                LoginButton.Content = "Logout";
-                                LoginButton.IsEnabled = true;
-                            });
-                    });
+                        OutputTextBox.Text = "Logged in: " + Client.SessionId;
+                        LoginButton.Content = "Logout";
+                        LoginButton.IsEnabled = true;
+                    }).AsTask().Wait());
             }
         }
     }

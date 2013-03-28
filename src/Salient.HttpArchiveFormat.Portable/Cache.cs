@@ -8,6 +8,9 @@ namespace Salient.Portable.HttpArchiveFormat
     [DataContract]
     public partial class Cache
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public Cache()
         {
  

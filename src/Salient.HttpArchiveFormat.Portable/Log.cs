@@ -10,6 +10,9 @@ namespace Salient.Portable.HttpArchiveFormat
     [DataContract]
     public partial class Log
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public Log()
         {
             Entries = new List<Entry>();

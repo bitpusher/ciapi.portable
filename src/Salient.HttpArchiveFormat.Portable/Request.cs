@@ -10,6 +10,9 @@ namespace Salient.Portable.HttpArchiveFormat
     [DataContract]
     public partial class Request
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public Request()
             : this(null, null)
         {
@@ -17,6 +20,11 @@ namespace Salient.Portable.HttpArchiveFormat
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="url"></param>
+        /// <param name="method"></param>
         public Request(string url, string method)
         {
             HeadersSize = -1;

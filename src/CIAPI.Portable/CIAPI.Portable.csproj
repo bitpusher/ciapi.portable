@@ -37,7 +37,6 @@
     <Compile Include="Generated\DTO.cs" />
     <Compile Include="Generated\Routes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RND.cs" />
     <Compile Include="Rpc\Client.cs" />
     <Compile Include="Rpc\Client_Authentication.cs" />
   </ItemGroup>

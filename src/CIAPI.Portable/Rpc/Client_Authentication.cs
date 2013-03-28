@@ -1,16 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using CIAPI.Portable.Model;
-using Newtonsoft.Json;
-using Salient.Portable.HttpArchiveFormat;
 
 namespace CIAPI.Portable.Rpc
 {
     public partial class Client
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        /// <exception cref="AggregateException"></exception>
         public Task<ApiLogOnResponseDTO> LoginAsync(string username, string password)
         {
             var dto = new ApiLogOnRequestDTO
@@ -49,6 +51,10 @@ namespace CIAPI.Portable.Rpc
         }
 
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public Task<ApiLogOffResponseDTO> LogOutAsync()
         {
 

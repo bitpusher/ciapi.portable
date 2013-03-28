@@ -250,8 +250,9 @@
 
             // to support smd methods that do not have a 'section' in meta or patch
             self.writeLine("        private Client _client;");
+            self.writeLine(self.createSummary(""));
             self.writeLine("        public string AppKey { get; set; }");
-
+            self.writeLine(self.createSummary(""));
             self.writeLine("        public Client(string rpcUri, string appKey)");
             self.writeLine("        {");
             self.writeLine("        AppKey=appKey;");
@@ -268,9 +269,11 @@
 
             each(subClasses, function (subClass, key) {
                 if (key != "default") {
+                    self.writeLine(self.createSummary(""));
                     self.writeLine("        public class _" + key);
                     self.writeLine("        {");
                     self.writeLine("            private " + self.className + " _client;");
+                    self.writeLine(self.createSummary(""));
                     self.writeLine("            public _" + key + "(" + self.className + " client){ this._client = client;}");
                 }
 

@@ -15,6 +15,9 @@ namespace Salient.Portable.HttpArchiveFormat
     [DataContract]
     public partial class HTTPArchive
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public HTTPArchive()
         {
             Log = new Log();
@@ -27,12 +30,22 @@ namespace Salient.Portable.HttpArchiveFormat
         public Log Log { get; set; }
 
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="date"></param>
+        /// <returns></returns>
         [Obsolete("these are what i found with a quick search. not convinced")]
         public static DateTime FromISO8601(string date)
         {
             return DateTime.Parse(date, null, DateTimeStyles.RoundtripKind);
 
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="date"></param>
+        /// <returns></returns>
         [Obsolete("these are what i found with a quick search. not convinced")]
         public static string ToISO8601(DateTime date)
         {

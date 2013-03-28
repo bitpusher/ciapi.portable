@@ -45,7 +45,7 @@ namespace Salient.Portable.HttpArchiveFormat
         /// <summary>
         /// encoding [string, optional] (new in 1.2)
         /// Encoding used for response text field e.g "base64". Leave out this field 
-        /// if the text field is HTTP decoded (decompressed & unchunked), than trans-coded 
+        /// if the text field is HTTP decoded (decompressed &amp;amp; unchunked), than trans-coded 
         /// from its original character set into UTF-8.
         /// </summary>
         [DataMember(Name = "encoding")]

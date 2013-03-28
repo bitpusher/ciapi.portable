@@ -1,6 +1,8 @@
 exports.schema = 
 
 
+
+
 {
     "namespace": "CIAPI.Portable.Model",
     "version": "0.111.0.0",
@@ -1862,11 +1864,11 @@ exports.schema =
                     "format": "decimal",
                     "minValue": -7.9228162514264338E+28,
                     "maxValue": 7.9228162514264338E+28,
-                    "description": "The realised profit and loss (P&L)."
+                    "description": "The realised profit and loss (P&amp;L)."
                 },
                 "RealisedPnlCurrency": {
                     "type": "string",
-                    "description": "The realised P&L currency."
+                    "description": "The realised P&amp;L currency."
                 },
                 "LastChangedDateTimeUtc": {
                     "type": "string",
