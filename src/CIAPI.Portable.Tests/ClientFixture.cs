@@ -14,12 +14,9 @@ namespace CIAPI.Portable.Tests
         [Test]
         public void GenerateAPIException()
         {
-            var client = new Client
-            {
-                ApiBaseUrl = "https://ciapi.cityindex.com/tradingapi"
-            };
+            var client = new Client("https://ciapi.cityindex.com/tradingapi", "ciapi.portable");
 
-            var t = client.LoginAsync(new ApiLogOnRequestDTO() { UserName = "foo" });
+            var t = client.LoginAsync("foo", "bar");
 
             try
             {
@@ -80,7 +77,7 @@ namespace CIAPI.Portable.Tests
                 };
 
 
-            var client = new Client();
+            var client = new Client("https://ciapi.cityindex.com/tradingapi", "ciapi.portable");
 
             Task<Entry> t = client.EnqueueRequestAsync(entry);
 
@@ -109,16 +106,10 @@ namespace CIAPI.Portable.Tests
         [Test]
         public void CanLoginToCI()
         {
-            var client = new Client
-                {
-                    ApiBaseUrl = "https://ciapi.cityindex.com/tradingapi"
-                };
+            var client = new Client("https://ciapi.cityindex.com/tradingapi", "ciapi.portable");
 
-            var  loginTask = client.LoginAsync(new ApiLogOnRequestDTO
-                {
-                    UserName = "xx663766",
-                    Password = "password1"
-                });
+
+            var loginTask = client.LoginAsync("xx663766", "password1");
 
             // simple block till completion. Async completion can be used by getting the awaiter or setting a .ContinueWith task
             try
@@ -127,7 +118,7 @@ namespace CIAPI.Portable.Tests
             }
             catch (Exception ex)
             {
-                
+
                 throw;
             }
 
@@ -140,7 +131,7 @@ namespace CIAPI.Portable.Tests
 
             Assert.AreEqual("xx663766", client.Username);
             Assert.IsNotNullOrEmpty(client.SessionId);
-            Assert.IsNotNull(client.AccountInformation);
+            Assert.IsNotNull(client.CurrentAccountInformation);
 
             var logOutTask = client.LogOutAsync();
 
@@ -149,7 +140,7 @@ namespace CIAPI.Portable.Tests
 
             Assert.IsNull(client.SessionId);
             Assert.IsNull(client.Username);
-            Assert.IsNull(client.AccountInformation);
+            Assert.IsNull(client.CurrentAccountInformation);
         }
     }
 }

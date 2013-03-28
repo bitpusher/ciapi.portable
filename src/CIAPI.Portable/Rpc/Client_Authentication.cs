@@ -11,28 +11,16 @@ namespace CIAPI.Portable.Rpc
 {
     public partial class Client
     {
-        public Task<ApiLogOnResponseDTO> LoginAsync(ApiLogOnRequestDTO dto)
+        public Task<ApiLogOnResponseDTO> LoginAsync(string username, string password)
         {
-            var username = dto.UserName;
-
-            string json = JsonConvert.SerializeObject(dto);
-
-            var entry = new Entry
-            {
-                Request = new Request
+            var dto = new ApiLogOnRequestDTO
                 {
-                    Method = "POST",
-                    Url = ApiBaseUrl + "/session",
-                    PostData = new PostData
-                    {
-                        MimeType = "application/json",
-                        Params = new Parameters(new NameValuePair("", dto))
-                    }
-                }
-            };
+                    UserName = username,
+                    Password = password
+                };
 
 
-            Task<Entry> getResponseTextTask = EnqueueRequestAsync(entry);
+            Task<ApiLogOnResponseDTO> getResponseTextTask = Authentication.LogOnAsync(dto);
 
             Task<ApiLogOnResponseDTO> deserializeTask = getResponseTextTask.ContinueWith(task =>
             {
@@ -42,59 +30,41 @@ namespace CIAPI.Portable.Rpc
                     case TaskStatus.Faulted:
                         throw task.Exception;
                     default:
-                        var logonDTO = JsonConvert.DeserializeObject<ApiLogOnResponseDTO>(task.Result.Response.Content.Text);
-                        SessionId = logonDTO.Session;
+
+                        SessionId = task.Result.Session;
                         Username = username;
-
-                        // get client account as it is necessary information
-
-                        var accountInfoTask = GetClientAndTradingAccountAsync();
-                        accountInfoTask.Wait();
-                        AccountInformation = accountInfoTask.Result;
-
-                        return logonDTO;
+                        return task.Result;
                 }
-
             });
 
+            Task<ApiLogOnResponseDTO> accountInfoTask = deserializeTask.ContinueWith(task =>
+                {
+                    var t = AccountInformation.GetClientAndTradingAccountAsync();
+                    t.Wait();
+                    CurrentAccountInformation = t.Result;
+                    return task.Result;
+                });
 
-            return deserializeTask.ContinueWith(task => task.Result);
+            return accountInfoTask.ContinueWith(task => task.Result);
         }
 
 
         public Task<ApiLogOffResponseDTO> LogOutAsync()
         {
-            string json = JsonConvert.SerializeObject(new ApiLogOffRequestDTO() { UserName = Username, Session = SessionId });
-            var entry = new Entry
-            {
-                // TODO: talk about why the api takes a post with querystring and an empty body - this causes problems for some http clients
-                Request = new Request
-                {
-                    Method = "POST",
-                    Url = ApiBaseUrl + "/session/deleteSession?UserName={UserName}&session={session}",
-                    PostData = new PostData
-                    {
-                        MimeType = "application/json",
-                        Params = new Parameters()
-                    },
-                    QueryString = new QueryString(
-                        new NameValuePair("UserName", Username),
-                        new NameValuePair("session", SessionId)
-                        )
-                }
-            };
 
-            Task<Entry> getResponseTextTask = EnqueueRequestAsync(entry);
+            Task<ApiLogOffResponseDTO> getResponseTextTask = Authentication.DeleteSessionAsync(Username, SessionId);
 
             Task<ApiLogOffResponseDTO> deserializeTask =
                 getResponseTextTask.ContinueWith(task =>
                 {
-                    var logOffRequestDTO =
-                        JsonConvert.DeserializeObject<ApiLogOffResponseDTO>(task.Result.Response.Content.Text);
-                    SessionId = null;
-                    Username = null;
-                    AccountInformation = null;
-                    return logOffRequestDTO;
+                    if (task.Result.LoggedOut)
+                    {
+                        SessionId = null;
+                        Username = null;
+                        CurrentAccountInformation = null;
+                    }
+
+                    return task.Result;
                 });
 
             return deserializeTask.ContinueWith(task => task.Result);

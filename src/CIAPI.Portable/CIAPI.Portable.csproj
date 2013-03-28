@@ -38,6 +38,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RND.cs" />
     <Compile Include="Rpc\Client.cs" />
+    <Compile Include="Rpc\Client_Authentication.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Streaming\" />
